@@ -7,17 +7,21 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
   -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
-  use {
+  use 'wbthomason/packer.nvim' --package manger
+  use { --telescope
   'nvim-telescope/telescope.nvim', tag = '0.1.0',
 -- or                            , branch = '0.1.x',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
-use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-use('ThePrimeagen/harpoon')
-use('mbbill/undotree')
-use { "ellisonleao/gruvbox.nvim" }
-use "EdenEast/nightfox.nvim" -- Packer
+use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) --styntx highlitting
+use('ThePrimeagen/harpoon')--the preamegin harpoon
+use('mbbill/undotree') --git-like-undotree
+use { "ellisonleao/gruvbox.nvim" } --colorscheme
+use "savq/melange" --colorscheme
+use 'ray-x/lsp_signature.nvim'
+use 'nvim-tree/nvim-tree.lua'
+use "EdenEast/nightfox.nvim" -- Packer colorscheme
+use "rebelot/kanagawa.nvim"
 -- use {
 --   'nvim-tree/nvim-tree.lua',
 --   requires = {
@@ -25,10 +29,10 @@ use "EdenEast/nightfox.nvim" -- Packer
 --   },
 --   tag = 'nightly' -- optional, updated every week. (see issue #1193)
 -- }
-use 'tpope/vim-commentary'
-
+use 'tpope/vim-commentary'--commenting
+use 'sainnhe/gruvbox-material'
   use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
-  use {
+  use { --lsp-zero
   'VonHeikemen/lsp-zero.nvim',
   requires = {
     -- LSP Support
@@ -49,5 +53,10 @@ use 'tpope/vim-commentary'
     -- Snippet Collection (Optional)
     {'rafamadriz/friendly-snippets'},
   }
+}
+use 'preservim/tagbar' --tagba
+use {
+    "SmiteshP/nvim-navic",
+    requires = "neovim/nvim-lspconfig"
 }
   end)

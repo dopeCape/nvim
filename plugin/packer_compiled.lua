@@ -109,6 +109,11 @@ _G.packer_plugins = {
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["gruvbox-material"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    url = "https://github.com/sainnhe/gruvbox-material"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
@@ -119,10 +124,20 @@ _G.packer_plugins = {
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -133,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  melange = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/melange",
+    url = "https://github.com/savq/melange"
   },
   ["nightfox.nvim"] = {
     loaded = true,
@@ -149,6 +169,16 @@ _G.packer_plugins = {
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-navic"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/nvim-navic",
+    url = "https://github.com/SmiteshP/nvim-navic"
+  },
+  ["nvim-tree.lua"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -163,6 +193,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  tagbar = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/tagbar",
+    url = "https://github.com/preservim/tagbar"
   },
   ["telescope.nvim"] = {
     loaded = true,
