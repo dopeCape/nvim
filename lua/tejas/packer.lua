@@ -15,6 +15,10 @@ return require('packer').startup(function(use)
 }
 use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) --styntx highlitting
 use('ThePrimeagen/harpoon')--the preamegin harpoon
+
+use('challenger-deep-theme/vim')
+use('jiangmiao/auto-pairs') --backets auto close
+use('frazrepo/vim-rainbow') -- rainbow barckets
 use('mbbill/undotree') --git-like-undotree
 use { "ellisonleao/gruvbox.nvim" } --colorscheme
 use "savq/melange" --colorscheme
@@ -22,6 +26,14 @@ use 'ray-x/lsp_signature.nvim'
 use 'nvim-tree/nvim-tree.lua'
 use "EdenEast/nightfox.nvim" -- Packer colorscheme
 use "rebelot/kanagawa.nvim"
+use "folke/tokyonight.nvim"
+use "j-hui/fidget.nvim" -- fideget at bottom right
+use "RRethy/vim-illuminate" -- TO HIGHT LIGHT funcs or vars when howerd
+use "rktjmp/lush.nvim"
+use "oncomouse/lushwal.nvim"
+use 'ryanoasis/vim-devicons'
+use "rktjmp/shipwright.nvim"
+use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
 -- use {
 --   'nvim-tree/nvim-tree.lua',
 --   requires = {
@@ -29,10 +41,12 @@ use "rebelot/kanagawa.nvim"
 --   },
 --   tag = 'nightly' -- optional, updated every week. (see issue #1193)
 -- }
+use 'romgrk/barbar.nvim' -- top bar
+use 'ggandor/lightspeed.nvim' -- LIGHT SPEED MOVEMNET 
 use 'tpope/vim-commentary'--commenting
 use 'sainnhe/gruvbox-material'
   use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
-  use { --lsp-zero
+  use { --lsp-zeeo
   'VonHeikemen/lsp-zero.nvim',
   requires = {
     -- LSP Support
@@ -56,7 +70,12 @@ use 'sainnhe/gruvbox-material'
 }
 use 'preservim/tagbar' --tagba
 use {
+  'nvim-lualine/lualine.nvim',
+  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+}
+use {
     "SmiteshP/nvim-navic",
     requires = "neovim/nvim-lspconfig"
+
 }
   end)
