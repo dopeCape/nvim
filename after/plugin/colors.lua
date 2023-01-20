@@ -9,7 +9,7 @@ require('nightfox').setup({
 
     styles = {
       comments = "italic",
-      keywords = "bold",
+      keywords = "italic",
       types = "italic,bold",
     }
   }

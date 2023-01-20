@@ -17,7 +17,7 @@ use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) --styntx highlitting
 use('ThePrimeagen/harpoon')--the preamegin harpoon
 
 use('challenger-deep-theme/vim')
-use('jiangmiao/auto-pairs') --backets auto close
+
 use('frazrepo/vim-rainbow') -- rainbow barckets
 use('mbbill/undotree') --git-like-undotree
 use { "ellisonleao/gruvbox.nvim" } --colorscheme
@@ -41,12 +41,53 @@ use { 'AlphaTechnolog/pywal.nvim', as = 'pywal' }
 --   },
 --   tag = 'nightly' -- optional, updated every week. (see issue #1193)
 -- }
-use 'romgrk/barbar.nvim' -- top bar
+use {
+  "zbirenbaum/neodim",
+  event = "LspAttach",
+  config = function ()
+    require("neodim").setup({
+      alpha = 0.75,
+      blend_color = "#000000",
+      update_in_insert = {
+        enable = true,
+        delay = 100,
+      },
+      hide = {
+        virtual_text = true,
+        signs = true,
+        underline = true,
+      }
+    })
+  end
+} -- dim unused  functions etc
+use('neovim/nvim-lspconfig') -- deps for pretiier
+use('jose-elias-alvarez/null-ls.nvim')-- deps for pretiier
+use('MunifTanjim/prettier.nvim')
+use'ibhagwan/fzf-lua'
+use {
+  'sudormrfbin/cheatsheet.nvim',
+
+  requires = {
+    {'nvim-telescope/telescope.nvim'},
+    {'nvim-lua/popup.nvim'},
+    {'nvim-lua/plenary.nvim'},
+  }
+}--cheetsheet  leader?
+use 'rcarriga/nvim-notify' --notifications
 use 'ggandor/lightspeed.nvim' -- LIGHT SPEED MOVEMNET 
 use 'tpope/vim-commentary'--commenting
 use 'sainnhe/gruvbox-material'
-  use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
-  use { --lsp-zeeo
+
+
+use 'voldikss/vim-floaterm' -- vim term
+use 'xiyaowong/nvim-transparent'
+use({
+    'rose-pine/neovim',
+    }) --rose poine
+        use "lukas-reineke/indent-blankline.nvim"
+
+
+use { --lsp-zeeo
   'VonHeikemen/lsp-zero.nvim',
   requires = {
     -- LSP Support

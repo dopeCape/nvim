@@ -79,15 +79,10 @@ _G.packer_plugins = {
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["auto-pairs"] = {
+  ["cheatsheet.nvim"] = {
     loaded = true,
-    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/auto-pairs",
-    url = "https://github.com/jiangmiao/auto-pairs"
-  },
-  ["barbar.nvim"] = {
-    loaded = true,
-    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/barbar.nvim",
-    url = "https://github.com/romgrk/barbar.nvim"
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/cheatsheet.nvim",
+    url = "https://github.com/sudormrfbin/cheatsheet.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
@@ -124,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["fzf-lua"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/fzf-lua",
+    url = "https://github.com/ibhagwan/fzf-lua"
+  },
   ["gruvbox-material"] = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/gruvbox-material",
@@ -138,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
+  },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
   ["kanagawa.nvim"] = {
     loaded = true,
@@ -189,10 +194,28 @@ _G.packer_plugins = {
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/melange",
     url = "https://github.com/savq/melange"
   },
+  neodim = {
+    config = { "\27LJ\2\n¸\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\thide\1\0\3\nsigns\2\17virtual_text\2\14underline\2\21update_in_insert\1\0\2\ndelay\3d\venable\2\1\0\2\nalpha\4\0€€ ÿ\3\16blend_color\f#000000\nsetup\vneodim\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/opt/neodim",
+    url = "https://github.com/zbirenbaum/neodim"
+  },
+  neovim = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/neovim",
+    url = "https://github.com/rose-pine/neovim"
+  },
   ["nightfox.nvim"] = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -208,6 +231,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/nvim-navic",
     url = "https://github.com/SmiteshP/nvim-navic"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
+  },
+  ["nvim-transparent"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/nvim-transparent",
+    url = "https://github.com/xiyaowong/nvim-transparent"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -234,6 +267,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ["prettier.nvim"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/prettier.nvim",
+    url = "https://github.com/MunifTanjim/prettier.nvim"
   },
   pywal = {
     loaded = true,
@@ -280,6 +323,11 @@ _G.packer_plugins = {
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/vim-devicons",
     url = "https://github.com/ryanoasis/vim-devicons"
   },
+  ["vim-floaterm"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/vim-floaterm",
+    url = "https://github.com/voldikss/vim-floaterm"
+  },
   ["vim-illuminate"] = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/vim-illuminate",
@@ -293,6 +341,13 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+vim.cmd [[augroup packer_load_aucmds]]
+vim.cmd [[au!]]
+  -- Event lazy-loads
+time([[Defining lazy-load event autocommands]], true)
+vim.cmd [[au LspAttach * ++once lua require("packer.load")({'neodim'}, { event = "LspAttach *" }, _G.packer_plugins)]]
+time([[Defining lazy-load event autocommands]], false)
+vim.cmd("augroup END")
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
