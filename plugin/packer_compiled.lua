@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  aurora = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/aurora",
+    url = "https://github.com/ray-x/aurora"
+  },
   ["cheatsheet.nvim"] = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/cheatsheet.nvim",
@@ -108,6 +113,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
+  ["codewindow.nvim"] = {
+    config = { "\27LJ\2\nW\0\0\3\0\4\0\b6\0\0\0'\2\1\0B\0\2\0029\1\2\0B\1\1\0019\1\3\0B\1\1\1K\0\1\0\27apply_default_keybinds\nsetup\15codewindow\frequire\0" },
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/codewindow.nvim",
+    url = "https://github.com/gorbit99/codewindow.nvim"
   },
   ["fidget.nvim"] = {
     loaded = true,
@@ -143,11 +154,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
-  },
-  ["kanagawa.nvim"] = {
-    loaded = true,
-    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
-    url = "https://github.com/rebelot/kanagawa.nvim"
   },
   ["lightspeed.nvim"] = {
     loaded = true,
@@ -189,18 +195,25 @@ _G.packer_plugins = {
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  melange = {
+  ["modicator.nvim"] = {
+    config = { "\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14modicator\frequire\0" },
     loaded = true,
-    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/melange",
-    url = "https://github.com/savq/melange"
+    needs_bufread = false,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/opt/modicator.nvim",
+    url = "https://github.com/melkster/modicator.nvim"
   },
   neodim = {
-    config = { "\27LJ\2\n¸\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\thide\1\0\3\nsigns\2\17virtual_text\2\14underline\2\21update_in_insert\1\0\2\ndelay\3d\venable\2\1\0\2\nalpha\4\0€€ ÿ\3\16blend_color\f#000000\nsetup\vneodim\frequire\0" },
+    config = { "\27LJ\2\n¸\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\thide\1\0\3\17virtual_text\2\14underline\2\nsigns\2\21update_in_insert\1\0\2\ndelay\3d\venable\2\1\0\2\16blend_color\f#000000\nalpha\4\0€€ ÿ\3\nsetup\vneodim\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/opt/neodim",
     url = "https://github.com/zbirenbaum/neodim"
+  },
+  ["neoscroll.nvim"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/neoscroll.nvim",
+    url = "https://github.com/karb94/neoscroll.nvim"
   },
   neovim = {
     loaded = true,
@@ -221,6 +234,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-cursorline"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/nvim-cursorline",
+    url = "https://github.com/yamatsum/nvim-cursorline"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -341,6 +359,21 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Setup for: modicator.nvim
+time([[Setup for modicator.nvim]], true)
+try_loadstring("\27LJ\2\na\0\0\2\0\5\0\r6\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0+\1\2\0=\1\3\0006\0\0\0009\0\1\0+\1\2\0=\1\4\0K\0\1\0\18termguicolors\vnumber\15cursorline\6o\bvim\0", "setup", "modicator.nvim")
+time([[Setup for modicator.nvim]], false)
+time([[packadd for modicator.nvim]], true)
+vim.cmd [[packadd modicator.nvim]]
+time([[packadd for modicator.nvim]], false)
+-- Config for: modicator.nvim
+time([[Config for modicator.nvim]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14modicator\frequire\0", "config", "modicator.nvim")
+time([[Config for modicator.nvim]], false)
+-- Config for: codewindow.nvim
+time([[Config for codewindow.nvim]], true)
+try_loadstring("\27LJ\2\nW\0\0\3\0\4\0\b6\0\0\0'\2\1\0B\0\2\0029\1\2\0B\1\1\0019\1\3\0B\1\1\1K\0\1\0\27apply_default_keybinds\nsetup\15codewindow\frequire\0", "config", "codewindow.nvim")
+time([[Config for codewindow.nvim]], false)
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads

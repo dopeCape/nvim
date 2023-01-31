@@ -21,14 +21,15 @@ use('challenger-deep-theme/vim')
 use('frazrepo/vim-rainbow') -- rainbow barckets
 use('mbbill/undotree') --git-like-undotree
 use { "ellisonleao/gruvbox.nvim" } --colorscheme
-use "savq/melange" --colorscheme
+use 'ray-x/aurora' -- color scheme aror
 use 'ray-x/lsp_signature.nvim'
 use 'nvim-tree/nvim-tree.lua'
 use "EdenEast/nightfox.nvim" -- Packer colorscheme
-use "rebelot/kanagawa.nvim"
+
 use "folke/tokyonight.nvim"
 use "j-hui/fidget.nvim" -- fideget at bottom right
 use "RRethy/vim-illuminate" -- TO HIGHT LIGHT funcs or vars when howerd
+
 use "rktjmp/lush.nvim"
 use "oncomouse/lushwal.nvim"
 use 'ryanoasis/vim-devicons'
@@ -61,6 +62,14 @@ use {
   end
 } -- dim unused  functions etc
 use('neovim/nvim-lspconfig') -- deps for pretiier
+use {
+  'gorbit99/codewindow.nvim',
+  config = function()
+    local codewindow = require('codewindow')
+    codewindow.setup()
+    codewindow.apply_default_keybinds()
+  end,
+} --code minimgap
 use('jose-elias-alvarez/null-ls.nvim')-- deps for pretiier
 use('MunifTanjim/prettier.nvim')
 use'ibhagwan/fzf-lua'
@@ -84,15 +93,29 @@ use 'xiyaowong/nvim-transparent'
 use({
     'rose-pine/neovim',
     }) --rose poine
-        use "lukas-reineke/indent-blankline.nvim"
+use "lukas-reineke/indent-blankline.nvim"
+use"karb94/neoscroll.nvim" --smooth scrolling
+use { 'melkster/modicator.nvim',
 
-
+  setup = function()
+    -- These are required for Modicator to work
+    vim.o.cursorline = true
+    vim.o.number = true
+    vim.o.termguicolors = true
+  end,
+  config = function()
+    require('modicator').setup({
+      -- ...
+    })
+  end
+}
+use 'yamatsum/nvim-cursorline' --high light current line
 use { --lsp-zeeo
   'VonHeikemen/lsp-zero.nvim',
   requires = {
     -- LSP Support
     {'neovim/nvim-lspconfig'},
-    {'williamboman/mason.nvim'},
+   {'williamboman/mason.nvim'},
     {'williamboman/mason-lspconfig.nvim'},
 
     -- Autocompletion
