@@ -1,4 +1,4 @@
-vim.g.neovide_transparency = 0.7
+vim.g.neovide_transparency = 0.6
 vim.g.neovide_hide_mouse_when_typing = true
 
 vim.g.neovide_cursor_vfx_mode = "pixiedust"
