@@ -5,6 +5,7 @@ vim.opt.relativenumber=true
 vim.opt.hlsearch=false
 vim.opt.incsearch=true
 vim.keymap.set("n","<C-h>","<C-w>h")
+vim.keymap.set("n","<leader>fx",vim.cmd.TodoTelescope) --NOTE: key map to open telescope for fix list
 vim.keymap.set("n","<C-l>","<C-w>l")
 vim.keymap.set("n","<C-k>","<C-w>k")
 vim.keymap.set("n","<C-j>","<C-w>j")

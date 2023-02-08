@@ -16,9 +16,24 @@ return require('packer').startup(function(use)
 use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) --styntx highlitting
 use('ThePrimeagen/harpoon')--the preamegin harpoon
 
+use 'rebelot/kanagawa.nvim'
 use('challenger-deep-theme/vim')
 
 use('frazrepo/vim-rainbow') -- rainbow barckets
+use 'savq/melange-nvim'
+ 
+-- Lua
+use {
+  "folke/todo-comments.nvim",
+  requires = "nvim-lua/plenary.nvim",
+  config = function()
+    require("todo-comments").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    }
+  end
+}
 use('mbbill/undotree') --git-like-undotree
 use { "ellisonleao/gruvbox.nvim" } --colorscheme
 use 'ray-x/aurora' -- color scheme aror
