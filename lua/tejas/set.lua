@@ -2,8 +2,9 @@ vim.opt.guicursor = ""
 vim.opt.nu=true
 vim.opt.relativenumber=true
 
+vim.keymap.set("n","<leader>z",vim.cmd.ZenMode)
 vim.opt.hlsearch=false
-vim.opt.incsearch=true
+vim.opt.incsearch=true 
 vim.keymap.set("n","<C-h>","<C-w>h")
 vim.keymap.set("n","<leader>fx",vim.cmd.TodoTelescope) --NOTE: key map to open telescope for fix list
 vim.keymap.set("n","<C-l>","<C-w>l")

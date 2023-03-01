@@ -23,6 +23,7 @@ use('frazrepo/vim-rainbow') -- rainbow barckets
 use 'savq/melange-nvim'
  
 -- Lua
+use "folke/zen-mode.nvim" --zen mode
 use {
   "folke/todo-comments.nvim",
   requires = "nvim-lua/plenary.nvim",
