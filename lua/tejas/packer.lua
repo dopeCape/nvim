@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
 }
 use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) --styntx highlitting
 use('ThePrimeagen/harpoon')--the preamegin harpoon
-
+use 'tpope/vim-fugitive' -- git for vim
 use 'rebelot/kanagawa.nvim'
 use('challenger-deep-theme/vim')
 
