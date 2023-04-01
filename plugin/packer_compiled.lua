@@ -213,7 +213,7 @@ _G.packer_plugins = {
     url = "https://github.com/melkster/modicator.nvim"
   },
   neodim = {
-    config = { "\27LJ\2\n¸\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\thide\1\0\3\14underline\2\nsigns\2\17virtual_text\2\21update_in_insert\1\0\2\ndelay\3d\venable\2\1\0\2\nalpha\4\0€€ ÿ\3\16blend_color\f#000000\nsetup\vneodim\frequire\0" },
+    config = { "\27LJ\2\n¸\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\thide\1\0\3\14underline\2\17virtual_text\2\nsigns\2\21update_in_insert\1\0\2\venable\2\ndelay\3d\1\0\2\nalpha\4\0€€ ÿ\3\16blend_color\f#000000\nsetup\vneodim\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
@@ -281,10 +281,9 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "/home/tejes/.local/share/nvim/site/pack/packer/opt/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -315,6 +314,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tejes/.local/share/nvim/site/pack/packer/start/shipwright.nvim",
     url = "https://github.com/rktjmp/shipwright.nvim"
+  },
+  ["tabnine-nvim"] = {
+    loaded = true,
+    path = "/home/tejes/.local/share/nvim/site/pack/packer/start/tabnine-nvim",
+    url = "https://github.com/codota/tabnine-nvim"
   },
   tagbar = {
     loaded = true,
@@ -392,14 +396,14 @@ time([[Setup for modicator.nvim]], false)
 time([[packadd for modicator.nvim]], true)
 vim.cmd [[packadd modicator.nvim]]
 time([[packadd for modicator.nvim]], false)
--- Config for: modicator.nvim
-time([[Config for modicator.nvim]], true)
-try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14modicator\frequire\0", "config", "modicator.nvim")
-time([[Config for modicator.nvim]], false)
 -- Config for: todo-comments.nvim
 time([[Config for todo-comments.nvim]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
 time([[Config for todo-comments.nvim]], false)
+-- Config for: modicator.nvim
+time([[Config for modicator.nvim]], true)
+try_loadstring("\27LJ\2\n;\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14modicator\frequire\0", "config", "modicator.nvim")
+time([[Config for modicator.nvim]], false)
 -- Config for: codewindow.nvim
 time([[Config for codewindow.nvim]], true)
 try_loadstring("\27LJ\2\nW\0\0\3\0\4\0\b6\0\0\0'\2\1\0B\0\2\0029\1\2\0B\1\1\0019\1\3\0B\1\1\1K\0\1\0\27apply_default_keybinds\nsetup\15codewindow\frequire\0", "config", "codewindow.nvim")

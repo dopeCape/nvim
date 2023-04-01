@@ -13,9 +13,13 @@ return require('packer').startup(function(use)
 -- or                            , branch = '0.1.x',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
+use "tree/nvim-web-devicons"
+
+  use { 'codota/tabnine-nvim', run = "./dl_binaries.sh" }
+
 use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'}) --styntx highlitting
 use('ThePrimeagen/harpoon')--the preamegin harpoon
-use 'tpope/vim-fugitive' -- git for vim
+use 'tpope/vim-fugitive' -- git wrapper for nvim
 use 'rebelot/kanagawa.nvim'
 use('challenger-deep-theme/vim')
 
